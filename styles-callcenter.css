@@ -1,0 +1,246 @@
+/* Дополнение для блока ИИ-коллцентра. Подключается после основного styles.css. */
+
+.callcenter{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.callcenter-head{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:48px;
+  align-items:end;
+  margin-bottom:38px;
+}
+
+.callcenter-head h2{margin-bottom:22px}
+.callcenter-head .section-desc{margin-bottom:0}
+
+.callcenter-badge{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  padding:12px 17px;
+  border-radius:99px;
+  font-size:13px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.callcenter-badge span{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 0 5px var(--tint);
+}
+
+.call-modes{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+
+.call-mode{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:36px;
+  background:var(--surface);
+}
+
+.call-mode-out{background:var(--tint)}
+
+.call-mode h3{
+  font-size:clamp(25px,2.4vw,34px);
+  font-weight:550;
+  line-height:1.25;
+  letter-spacing:-.04em;
+  margin-bottom:28px;
+}
+
+.call-flow{
+  display:grid;
+  gap:0;
+}
+
+.call-flow>div{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:14px;
+  align-items:start;
+  padding:15px 0;
+  border-top:1px solid var(--line);
+}
+
+.call-flow>div:first-child{border-top:0}
+
+.call-flow span{
+  color:var(--accent);
+  font-size:12px;
+  font-weight:700;
+  padding-top:3px;
+}
+
+.call-flow p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+  font-size:15px;
+}
+
+.callcenter-benefits{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:34px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.callcenter-benefits article{
+  padding:30px 25px 32px 0;
+}
+
+.callcenter-benefits article+article{
+  border-left:1px solid var(--line);
+  padding-left:25px;
+}
+
+.callcenter-benefits article:nth-child(n+5){
+  border-top:1px solid var(--line);
+}
+
+.callcenter-benefits article:nth-child(5){
+  border-left:0;
+  padding-left:0;
+}
+
+.benefit-icon{
+  display:block;
+  color:var(--accent);
+  font-size:30px;
+  line-height:1;
+  min-height:42px;
+  margin-bottom:20px;
+}
+
+.callcenter-benefits h3{
+  font-size:17px;
+  min-height:46px;
+}
+
+.callcenter-benefits p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.75;
+}
+
+.call-demo-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:28px;
+  margin-top:36px;
+}
+
+.phone-demo,
+.realtor-result{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:34px;
+  background:var(--surface);
+}
+
+.phone-line{
+  padding:18px 0;
+  border-top:1px solid var(--line);
+}
+
+.phone-line:first-of-type{border-top:0}
+
+.phone-line strong{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:7px;
+}
+
+.phone-line.ai strong{color:var(--accent)}
+
+.phone-line p{
+  margin:0;
+  line-height:1.7;
+  font-size:15px;
+}
+
+.phone-line.ai p{
+  color:var(--accent);
+}
+
+.realtor-result{
+  background:var(--tint);
+}
+
+.realtor-result h3{
+  font-size:clamp(23px,2vw,29px);
+  line-height:1.35;
+  letter-spacing:-.035em;
+  margin-bottom:22px;
+}
+
+.realtor-result ul{
+  margin:0 0 28px;
+  padding-left:19px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.85;
+}
+
+.realtor-result .button{
+  width:fit-content;
+}
+
+@media(max-width:1100px){
+  .callcenter-benefits{grid-template-columns:1fr 1fr}
+  .callcenter-benefits article:nth-child(odd){border-left:0;padding-left:0}
+  .callcenter-benefits article:nth-child(n+3){border-top:1px solid var(--line)}
+}
+
+@media(max-width:767px){
+  .callcenter-head{
+    grid-template-columns:1fr;
+    gap:18px;
+    align-items:start;
+  }
+
+  .callcenter-badge{width:fit-content}
+
+  .call-modes,
+  .call-demo-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .call-mode,
+  .phone-demo,
+  .realtor-result{
+    padding:26px;
+  }
+
+  .callcenter-benefits{
+    grid-template-columns:1fr;
+  }
+
+  .callcenter-benefits article,
+  .callcenter-benefits article+article,
+  .callcenter-benefits article:nth-child(5){
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:24px 0;
+  }
+
+  .callcenter-benefits article:first-child{border-top:0}
+
+  .callcenter-benefits h3{min-height:0}
+}
