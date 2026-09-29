@@ -218,6 +218,7 @@ function render(page) {
   <script type="application/ld+json">${jsonLd}</script>
   <link rel="stylesheet" href="../styles.css?v=20260928-offer">
   <link rel="stylesheet" href="../landing-pages.css?v=20260929-1">
+  <script src="../metrika.js?v=113171222" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">К содержанию</a>
@@ -247,6 +248,7 @@ function render(page) {
   </main>
   <footer class="lp-footer wrap"><a href="../" class="brand"><span class="brand-mark">р.</span>ИИ Риелтор</a><a href="../#solutions">Все решения</a><a href="tel:+79234164106">+7 923 416-41-06</a></footer>
   <div class="lp-mobile-contact" aria-label="Связаться с нами"><a href="tel:+79234164106">Позвонить ↗</a><a href="https://t.me/opadimasik" target="_blank" rel="noopener noreferrer">Telegram ↗</a></div>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113171222" style="position:absolute;left:-9999px" alt=""></div></noscript>
 </body>
 </html>
 `;
