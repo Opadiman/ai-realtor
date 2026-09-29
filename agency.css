@@ -77,3 +77,17 @@ html,body{overflow-x:clip}
 .faq-grid a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .button.telegram-cta{border:1px solid var(--accent)}
 @media(max-width:767px){.faq h2{margin-bottom:26px}.faq-grid{grid-template-columns:1fr}.faq-grid article{padding:22px 0}.faq-grid h3{font-size:18px}}
+
+/* Crawlable paths to the focused solutions. */
+.solutions{border-top:1px solid var(--line)}
+.solutions h2{max-width:760px}
+.solutions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.solutions-grid a{position:relative;display:flex;flex-direction:column;min-height:225px;padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--surface);transition:transform .22s ease,background .22s ease}
+.solutions-grid a:hover{background:var(--tint);transform:translateY(-4px)}
+.solutions-grid a>span{font-size:12px;color:var(--accent);font-weight:750;margin-bottom:auto}
+.solutions-grid h3{font-size:20px;margin:25px 0 8px}
+.solutions-grid p{font-size:14px;line-height:1.65;color:var(--muted);margin:0;max-width:240px}
+.solutions-grid b{position:absolute;right:24px;top:20px;color:var(--accent);font-size:22px;font-weight:400}
+@media(max-width:1100px){.solutions-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:767px){.solutions-grid{grid-template-columns:1fr 1fr;gap:10px}.solutions-grid a{min-height:215px;padding:18px}.solutions-grid h3{font-size:17px;margin-top:20px}.solutions-grid p{font-size:13px}.solutions-grid b{right:17px;top:14px}}
+@media(max-width:430px){.solutions-grid{grid-template-columns:1fr}.solutions-grid a{min-height:145px}.solutions-grid h3{margin-top:12px}.solutions-grid p{max-width:none}}

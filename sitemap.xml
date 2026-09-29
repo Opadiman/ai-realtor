@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ai-agent-realtor.ru/</loc>
-    <lastmod>2026-09-29</lastmod>
-  </url>
+  <url><loc>https://ai-agent-realtor.ru/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/ai-realtor/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/ai-call-center/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/chat-agent/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/for-agency/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/for-realtor/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/rent/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://ai-agent-realtor.ru/cases/</loc><lastmod>2026-09-29</lastmod></url>
 </urlset>
