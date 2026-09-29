@@ -66,3 +66,14 @@ html,body{overflow-x:clip}
 .cursor-orbit.is-pressed{width:25px;height:25px}
 @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){body.cursor-enabled,body.cursor-enabled a,body.cursor-enabled button,body.cursor-enabled summary{cursor:none}}
 @media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.cursor-orbit{display:none}}
+
+/* Search-friendly answers, kept visible in the page HTML. */
+.faq{border-top:1px solid var(--line)}
+.faq h2{max-width:800px;margin-bottom:38px}
+.faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 46px}
+.faq-grid article{border-top:1px solid var(--line);padding:25px 0 28px}
+.faq-grid h3{font-size:20px;margin-bottom:12px}
+.faq-grid p{font-size:15px;line-height:1.8;color:var(--muted);margin:0}
+.faq-grid a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.button.telegram-cta{border:1px solid var(--accent)}
+@media(max-width:767px){.faq h2{margin-bottom:26px}.faq-grid{grid-template-columns:1fr}.faq-grid article{padding:22px 0}.faq-grid h3{font-size:18px}}
